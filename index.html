@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Um convite 💕</title>
+    <title>Convite especial para Pedro Seixas</title>
 
     <style>
         body {
@@ -27,7 +27,13 @@
         h1 {
             color: #e91e63;
         }
-
+.foto-pedro {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
         button {
             border: none;
             padding: 12px 25px;
@@ -57,7 +63,7 @@
 <body>
 
     <div class="caixa">
-        <h1>Você quer sair comigo sexta-feira? 💕</h1>
+        <h1>Você se enxerga como uma pessoa bonita?</h1>
 
         <button id="sim" onclick="responderSim()">Sim ❤️</button>
         <button id="nao" onclick="responderNao()">Não</button>
@@ -67,11 +73,15 @@
 
     <script>
         function responderSim() {
-            document.getElementById("resultado").innerHTML = "😊💕";
+            document.getElementById("resultado").innerHTML = <div>
+                Realmente, olha só que homem perfeito, sem condições.
+                <br><br>
+                <img src="pedro.jpg" alt="Homem perfeito" class="foto-pedro">
+            </div>;
         }
 
         function responderNao() {
-            alert("Não é possível completar a ação 😅");
+            alert("Não é possível que você ache isso, pode ir desacreditanto porque sua beleza é tamanha que não cabe explicação nem com todas as palavras do mundo.");
         }
     </script>
 
